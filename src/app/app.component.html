@@ -1,0 +1,25 @@
+<div class="game-container">
+  <div 
+    class="light" 
+    [class.red]="currentLight === 'red'" 
+    [class.green]="currentLight === 'green'">
+  </div>
+  
+  <div class="controls">
+    <button 
+      (click)="playerStop()" 
+      [disabled]="!gameActive || gameOver || winner || currentLight === 'red'">
+      Stop
+    </button>
+    <button (click)="startGame()" [disabled]="gameActive">Start Game</button>
+    <button (click)="resetGame()" [disabled]="!gameOver && !winner">Reset Game</button>
+  </div>
+
+  <h2>{{ message }}</h2>
+
+  <!-- Celebration or Game Over Animations -->
+  <div class="win-animation" *ngIf="winner">🎉 You Won! 🎉</div>
+  <div class="lose-animation" *ngIf="gameOver">💀 Game Over! You Got Caught! 💀</div>
+
+  <audio #gameMusic src="assets/game-music.mp3"></audio>
+</div>
