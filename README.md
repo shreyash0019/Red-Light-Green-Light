@@ -71,7 +71,7 @@ This will run the app on `http://localhost:4200/`.
 
 This project has been deployed using **Netlify**. You can play the game by visiting the following link:
 
-[Play the Game]([https://your-site-name.netlify.app](https://red-green-light-game.netlify.app))
+[Play the Game]([https://your-site-name.netlify.app](https://red-green-light-game.netlify.app)
 
 ---
 
