@@ -69,7 +69,7 @@ export class AppComponent {
       this.consecutiveStops++;
 
       // Win condition: Player stopped 3 times in a row before red
-      if (this.consecutiveStops >= 3) {
+      if (this.consecutiveStops >= 5) {
         this.endGame(true);
       }
     } else if (this.currentLight === 'red') {
