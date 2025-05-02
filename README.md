@@ -84,7 +84,6 @@ This project has been deployed using **Netlify**. You can play the game by visit
 ## **Contributing:**
 Feel free to fork the repository and submit issues or pull requests if you have suggestions or improvements!
 
--
 
 ---
 
